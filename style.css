@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#title,
+#description {
+  margin: 10px 0;
+}
+
+#treemap {
+  border: 1px solid #8B0000;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 600px;
+}
+
+#tooltip {
+  position: absolute;
+  background-color: rgba(189, 189, 189, 0.801);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  pointer-events: none;
+  display: none;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  min-width: 100px;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+#legend {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 20px 20px;
+  border: 1px solid #8B0000;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #F5F5F5;
+  
+}
+
+.legend-item {
+  flex: 0 0 calc(25% - 10px);
+}
+
+.tile-text {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  
+}
